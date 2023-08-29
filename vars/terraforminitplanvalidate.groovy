@@ -1,4 +1,4 @@
-def call(String init = 'yes', String fmt = 'yes', String validate = 'yes', String plan = 'yes', ) {
+def call(String init = 'yes', String fmt = 'yes', String validate = 'yes', String plan = 'yes') {
   if(init == 'yes') { 
     sh 'terraform init'
   }
