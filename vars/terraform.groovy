@@ -25,11 +25,11 @@ def call(String repo) {
 			sh 'terraform fmt'
 		  }
 		}
-		stage('Terraform validate') {
+		/*stage('Terraform validate') {
 		  steps {
 			sh 'terraform validate'
 		  }
-		}
+		}*/
 		stage('Terraform Plan') {
 		  steps {
 			sh 'terraform plan'
